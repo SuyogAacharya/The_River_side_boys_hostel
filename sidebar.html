@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Riverside Boys Hostel</title>
+    <style>
+        /* Reset default margin and padding */
+        body, h1, h2, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Add a custom font for a professional look (ensure you have access to this font) */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Improved background image settings */
+        body {
+            background-image: url('background.jpg'); /* Replace 'background.jpg' with your image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+        }
+
+        /* Sidebar styling */
+        .sidebar {
+            background-color: #333;
+            color: #fff;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            overflow-y: auto;
+        }
+
+        .sidebar a {
+            padding: 20px;
+            text-decoration: none;
+            color: #fff;
+            display: block;
+        }
+
+        .sidebar a:hover {
+            background-color: #555;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+            margin-left: 250px; /* Adjust for the width of the sidebar */
+            position: relative;
+        }
+
+        h1 {
+            font-size: 42px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        /* Logo styling */
+        .logo {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 80px;
+            height: 80px;
+            background-image: url('logo.jpg'); /* Replace 'logo.jpg' with your logo */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            border-radius: 50%;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Section and container styling */
+        section {
+            padding: 40px 0;
+            background-color: #fff; /* Add a white background to sections */
+            margin-left: 250px; /* Adjust for the width of the sidebar */
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Features styling */
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .feature {
+            width: 300px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9; /* Light gray background for features */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+            cursor: pointer;
+        }
+
+        .feature h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            font-size: 16px;
+        }
+
+        .feature img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Add hover effects */
+        .feature:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="#testimonials">Testimonials</a>
+        <a href="#about">About Us</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <header>
+        <!-- Circular Logo -->
+        <div class="logo"></div>
+        <h1>Welcome to The Riverside Boys Hostel</h1>
+        <p>Your Home Away from Home: Where Comfort Meets Adventure!</p>
+    </header>
+    
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>The Riverside Boys Hostel is a cozy and affordable accommodation located in the heart of the city. Our mission is to provide a comfortable and memorable stay for travelers from around the world.</p>
+        </div>
+    </section>
+    
+    <section id="features">
+        <div class="container">
+            <h2>Features</h2>
+            <div class="features">
+                <div class="feature">
+                    <img src="room.jpg" alt="Comfortable Room">
+                    <h3>Comfortable Rooms</h3>
+                    <p>Our hostel offers clean and comfortable rooms with all the essential amenities you need for a great stay.</p>
+                </div>
+                <div class="feature">
+                    <img src="hostel-photo.jpg" alt="Common Area">
+                    <h3>Common Areas</h3>
+                    <p>Relax in our common areas, meet fellow travelers, and share your travel experiences.</p>
+                </div>
+                <div class="feature">
+                    <img src="support.jpg" alt="24/7 Support">
+                    <h3>24/7 Support</h3>
+                    <p>Our friendly staff is available 24/7 to assist you and make your stay as pleasant as possible.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us section with phone number link -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need assistance, feel free to contact our Hostel Warden, Deeraj Giri, at <a href="tel:9847779513">984-777-9513</a>.</p>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 The Riverside Boys Hostel</p>
+    </footer>
+</body>
+</html>
