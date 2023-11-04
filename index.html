@@ -11,15 +11,12 @@
             padding: 0;
         }
 
-        /* Add a custom font for a professional look (ensure you have access to this font) */
+        /* Body styling */
         body {
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
-            background-image: url('background.jpg'); /* Replace 'background.jpg' with your image */
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-position: center center;
+            background: url('background.jpg') center/cover no-repeat fixed;
+            color: #333;
         }
 
         /* Sidebar styling */
@@ -81,10 +78,7 @@
             left: 20px;
             width: 80px;
             height: 80px;
-            background-image: url('logo.jpg'); /* Replace 'logo.jpg' with your logo */
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center center;
+            background: url('logo.jpg') center/cover no-repeat;
             border-radius: 50%;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
@@ -92,7 +86,7 @@
         /* Section and container styling */
         section {
             padding: 40px 0;
-            background-color: #fff; /* Add a white background to sections */
+            background-color: #fff;
             margin-left: 0; /* Initially the sidebar is hidden */
         }
 
@@ -113,7 +107,7 @@
             width: 300px;
             margin: 20px;
             padding: 20px;
-            background-color: #f9f9f9; /* Light gray background for features */
+            background-color: #f9f9f9;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
             transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
@@ -225,11 +219,9 @@
         /* WhatsApp logo styles */
         .whatsapp-logo {
             display: block;
-            width: 40px; /* Adjust the size as needed */
+            width: 40px;
             margin: 10px auto;
-            background-image: url('whats app logo.png'); /* Replace 'whatsapp-logo.png' with your WhatsApp logo image */
-            background-size: contain;
-            background-repeat: no-repeat;
+            background: url('whats app logo.png') center/contain no-repeat;
             cursor: pointer;
         }
     </style>
@@ -263,7 +255,7 @@
                     <h3>Common Areas</h3>
                     <p>Relax in our common areas, meet fellow travelers, and share your travel experiences.</p>
                 </div>
-                <div class "feature">
+                <div class="feature">
                     <img src="support.jpg" alt="24/7 Support">
                     <h3>24/7 Support</h3>
                     <p>Our friendly staff is available 24/7 to assist you and make your stay as pleasant as possible.</p>
@@ -292,12 +284,28 @@
         </div>
     </section>
     
+    <!-- Google Map section -->
+    <section id="location">
+        <div class="container">
+            <h2>Our Location</h2>
+            <!-- Add the Google Map iframe below -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4415.447204470612!2d85.33772765161661!3d27.681995996768492!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19c862cee39d%3A0x7f8f2b2308d1aa13!2sYour%20Hostel%20Name%20Here!5e0!3m2!1sen!2snp!4v1640883132154!5m2!1sen!2snp"
+                width="100%"
+                height="400"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+            ></iframe>
+        </div>
+    </section>
+    
     <section id="contact">
         <div class="container">
             <h2>Contact Us</h2>
             <p>If you have any questions or need assistance, feel free to contact our warden:</p>
             <p>Warden: Dheeraj Giri</p>
-            <p>Phone Number: <a href="tel:+9779847779513">+9779847779513</a></p>
+            <p>Phone Number: <a href="tel:+9779847779513">+977 984 777 9513</a></p>
             <a href="https://wa.link/8sdmjs" class="whatsapp-logo" title="WhatsApp"></a>
         </div>
     </section>
@@ -305,7 +313,7 @@
     <footer>
         <p>&copy; 2023 The Riverside Boys Hostel</p>
     </footer>
-
+    
     <!-- JavaScript for toggling the sidebar and handling testimonials -->
     <script>
         // Toggle the sidebar
